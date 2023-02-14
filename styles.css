@@ -1,0 +1,135 @@
+:root {
+    --dark-grey: #101010;
+    --mid-grey: #2e2e2e;
+    --light-grey: #7a7a7a;
+    --pink: #ff52a3;
+    --lighter-pink: #ff94c6;
+}
+
+body {
+    background-color: var(--dark-grey);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans MT', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:none;
+}
+
+header {
+    background-color: var(--mid-grey);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 2s;
+}
+
+header:hover {
+    background-color: rgb(153, 117, 123);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+nav a {
+display: block;
+padding: 10px 20px;
+color: var(--light-grey);
+font-size: 20px;
+text-decoration: none;
+transition: color 750ms;
+}
+
+nav a:hover{
+    color: var(--pink);
+}
+
+.logo {
+    color: var(--pink);
+    font-size: 50px;
+    margin: 0px;
+    font-family: impact;
+}
+
+main {
+    flex: 1;
+}
+
+main > h1 {
+    color: var(--light-grey);
+    font-family: 'Tw Cen MT Condensed';
+    font-weight: 100;
+    font-size: 50px;
+    text-align: center;
+}
+
+#imagePortfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+img {
+    background-color: var(--mid-grey);
+    border: none;
+    object-fit: cover;
+    height: 300px;
+    aspect-ratio: auto;
+    transition: height 2s, width 2s;
+}
+
+img:hover {
+    height: 50vh;
+
+}
+
+.portfolioColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer {
+    background-color: var(--mid-grey);
+    transition: background-color 2s;
+    margin-top: 50px;
+}
+
+footer .logo {
+    font-size: 30px;
+}
+
+#logoAndSocials {
+    gap: 1vmin;
+    align-items: center;
+}
+
+footer i {
+    font-size: 45px;
+    border-radius: 50%;
+    overflow: hidden;
+    color: var(--light-grey);
+}
+
+footer ul {
+    display: flex;
+    list-style: none; 
+}
+
+#contactLinks {
+    flex-direction: column;
+    color: var(--light-grey);
+    margin-top: 0;
+    gap: 5px;
+}
