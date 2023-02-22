@@ -30,10 +30,6 @@ header {
     transition: background-color 2s;
 }
 
-header:hover {
-    background-color: rgb(153, 117, 123);
-}
-
 nav ul {
     list-style: none;
     display: flex;
@@ -54,13 +50,6 @@ nav a:hover{
     color: var(--pink);
 }
 
-.logo {
-    color: var(--pink);
-    font-size: 50px;
-    margin: 0px;
-    font-family: impact;
-}
-
 main {
     flex: 1;
 }
@@ -76,28 +65,18 @@ main > h1 {
 #imagePortfolio {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
+    padding-left: 20px;
+    flex-wrap: wrap;
+
 }
 
-img {
+#imagePortfolio > img {
     background-color: var(--mid-grey);
     border: none;
     object-fit: cover;
     height: 300px;
-    aspect-ratio: auto;
-    transition: height 2s, width 2s;
-}
-
-img:hover {
-    height: 50vh;
-
-}
-
-.portfolioColumn {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    width: 500px;
 }
 
 footer {
