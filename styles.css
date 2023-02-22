@@ -18,7 +18,6 @@ body {
 
 a {
     text-decoration: none;
-    color:none;
 }
 
 header {
@@ -97,6 +96,7 @@ main > h1 {
 
 .imageContainer:hover .imageOverlay {
     opacity: .6;
+    cursor:pointer;
 }
 
 footer {
