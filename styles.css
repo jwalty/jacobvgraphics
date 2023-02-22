@@ -68,15 +68,35 @@ main > h1 {
     gap: 20px;
     padding-left: 20px;
     flex-wrap: wrap;
-
 }
 
-#imagePortfolio > img {
-    background-color: var(--mid-grey);
-    border: none;
-    object-fit: cover;
-    height: 300px;
+#imagePortfolio img {
+    display: block;
     width: 500px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.imageOverlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--pink);
+    opacity: 0;
+    transition: 500ms;
+}
+
+.imageContainer {
+    position: relative;
+}
+
+
+.imageContainer:hover .imageOverlay {
+    opacity: .6;
 }
 
 footer {
