@@ -1,20 +1,9 @@
-let allPortfolioImages = document.querySelectorAll("#imagePortfolio > img");
-let portfolioContainer = document.querySelector("#imagePortfolio");
+let allPortfolioLinks = document.querySelectorAll("#imagePortfolio > a");
 
-allPortfolioImages.forEach((img) => {
-    
-    let imageContainer = document.createElement("div");
-    let imageOverlay = document.createElement("div");
+allPortfolioLinks.forEach((link) => {
 
-    imageContainer.classList.add("imageContainer");
-    imageOverlay.classList.add("imageOverlay");
-    imageContainer.appendChild(img);
-    imageContainer.appendChild(imageOverlay);
+    let image = document.createElement('img');
+    image.setAttribute('src',link.getAttribute('href'));
+    link.appendChild(image);
 
-
-    imageContainer.addEventListener('click',() => {
-        window.open(img.src);
-    });
-
-    portfolioContainer.appendChild(imageContainer);
 });
